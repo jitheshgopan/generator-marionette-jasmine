@@ -9,11 +9,11 @@ function Generator(args, options, config) {
   yeoman.generators.Base.apply(this, arguments);
 
   // custom mocha generator
-  this.testFramework = 'mocha-amd';
+  //this.testFramework = 'mocha-amd';
 
   this.templateFramework = 'handlebars';
 
-  this.hookFor(this.testFramework, { as: 'app' });
+  //this.hookFor(this.testFramework, { as: 'app' });
 
   this.on('end', function () {
     if (['app', 'backbone', 'marionette'].indexOf(this.generatorName) >= 0) {
