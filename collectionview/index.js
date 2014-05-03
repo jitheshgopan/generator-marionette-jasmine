@@ -25,7 +25,7 @@ function Generator() {
   // invoke  mocha
   this.hookFor('mocha-amd', { 
     as: 'unitTest', 
-    args: [this.name, 'collectionview', 'views/collection']
+    args: [this.name, 'collectionview', 'views']
   });
   
 }
@@ -36,5 +36,5 @@ Generator.prototype.createCollectionViewFiles = function createCollectionViewFil
   var ext = 'js';
   var baseDir = validDir.getValidatedFolder( 'app/' );
   
-  this.template('collectionview.' + ext, path.join(baseDir + 'scripts/views/collection', this.name + '.' + ext));
+  this.template('collectionview.' + ext, path.join(baseDir + 'scripts/views', this.name + '.' + ext));
 };

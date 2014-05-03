@@ -32,7 +32,7 @@ function Generator() {
   // invoke  mocha
   this.hookFor('mocha-amd', { 
     as: 'unitTest', 
-    args: [this.name, 'compositeview', 'views/composite']
+    args: [this.name, 'compositeview', 'views']
   });
 }
 
@@ -42,5 +42,5 @@ Generator.prototype.createCompositeViewFiles = function createCompositeViewFiles
   var ext = 'js';
   var baseDir = validDir.getValidatedFolder( 'app/' );
 
-  this.template('compositeview.' + ext, path.join(baseDir + 'scripts/views/composite', this.name + '.' + ext));
+  this.template('compositeview.' + ext, path.join(baseDir + 'scripts/views', this.name + '.' + ext));
 };

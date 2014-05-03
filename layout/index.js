@@ -28,7 +28,7 @@ function Generator() {
   // invoke  mocha
   this.hookFor('mocha-amd', { 
     as: 'unitTest', 
-    args: [this.name, 'layout', 'views/layout']
+    args: [this.name, 'layout', 'views']
   });
 }
 
@@ -38,5 +38,5 @@ Generator.prototype.createLayoutFiles = function createLayoutFiles() {
   var ext = 'js';
   var baseDir = validDir.getValidatedFolder( 'app/' );
 
-  this.template('layout.' + ext, path.join(baseDir + 'scripts/views/layout', this.name + '.' + ext));
+  this.template('layout.' + ext, path.join(baseDir + 'scripts/views', this.name + '.' + ext));
 };
