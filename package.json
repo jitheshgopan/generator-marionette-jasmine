@@ -1,7 +1,7 @@
 {
-  "name" : "generator-mario",
+  "name": "generator-mario",
   "description": "Yeoman generator for Express, Marionette and Backbone with AMD",
-  "version" : "0.1.5",
+  "version": "0.1.5",
   "keywords": [
     "yeoman-generator",
     "yeoman",
@@ -22,7 +22,9 @@
     "yeoman-generator": "git://github.com/mrichard/generator.git",
     "underscore.string": "~2.3.1",
     "generator-buster": "~0.0.1",
-    "chalk": "~0.2.0"
+    "chalk": "~0.2.0",
+    "grunt": "^0.4.4",
+    "grunt-contrib-jasmine": "^0.6.4"
   },
   "devDependencies": {
     "mocha": "~1.8.1"
